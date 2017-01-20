@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="afecf1a1e8a84655812368468ac39e59" Name="Diagram1">
+        <EntityTypeShape EntityType="EBIZG03Model.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EBIZG03Model.Address" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EBIZG03Model.AspNetRole" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="EBIZG03Model.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EBIZG03Model.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EBIZG03Model.AspNetUser" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EBIZG03Model.Cart" Width="1.5" PointX="5.25" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EBIZG03Model.CartItem" Width="1.5" PointX="7.5" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EBIZG03Model.Contact" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EBIZG03Model.Order" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EBIZG03Model.OrderItem" Width="1.5" PointX="7.5" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EBIZG03Model.Product" Width="1.5" PointX="5.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EBIZG03Model.sysdiagram" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="EBIZG03Model.FK_Address_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="EBIZG03Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="EBIZG03Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="EBIZG03Model.FK_Order_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="EBIZG03Model.FK__CartItem__CartID__09A971A2" ManuallyRouted="false" />
+        <AssociationConnector Association="EBIZG03Model.FK__CartItem__Produc__0A9D95DB" ManuallyRouted="false" />
+        <AssociationConnector Association="EBIZG03Model.FK_OrderItems_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="EBIZG03Model.FK_OrderItems_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="EBIZG03Model.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

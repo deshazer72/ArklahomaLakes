@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
+}
+
+
+<div class="jumbotron">
+    <center><img width="600" height="480" src="~/Images/ArklahomaLaekpresentation.jpg" /> </center>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-4">
+        <ul style="list-style:none">
+            <li id="strBeaverLake">@Html.ActionLink("BeaverLake", "Index", "Customers")</li>
+        </ul>
+
+    </div>
+</div>
+@section Scripts
+{
+    <script type="text/javascript">
+        $('#page1').on('pageinit', function () {
+            var strBeaverLake = $('#strBeaverLake');
+            strBeaverLake.hide();
+            if (confirm("Can we determine your location press ok or just press cancel") == true) {
+                strBeaverLake.show();
+            }
+        });
+    </script>
+}

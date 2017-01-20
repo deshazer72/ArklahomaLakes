@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArklahomaLakes.WebUi", "ArklahomaLakes.WebUi\ArklahomaLakes.WebUi.csproj", "{272EACA1-7B32-403F-9B9D-1ACBB3F2CB05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArklahomaLake.Domain", "ArklahomaLake.Domain\ArklahomaLake.Domain.csproj", "{298B7C5F-AD25-421D-8914-84B5BA3EE7AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{272EACA1-7B32-403F-9B9D-1ACBB3F2CB05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{272EACA1-7B32-403F-9B9D-1ACBB3F2CB05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{272EACA1-7B32-403F-9B9D-1ACBB3F2CB05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{272EACA1-7B32-403F-9B9D-1ACBB3F2CB05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{298B7C5F-AD25-421D-8914-84B5BA3EE7AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{298B7C5F-AD25-421D-8914-84B5BA3EE7AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{298B7C5F-AD25-421D-8914-84B5BA3EE7AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{298B7C5F-AD25-421D-8914-84B5BA3EE7AC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

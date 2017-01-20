@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ArklahomaLake" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Deshazer72\\Documents\\Visual\ Studio\ 2015\\Projects\\ArklahomaLakes\\ArklahomaLakes\.WebUi\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Deshazer72\\Documents\\Visual\ Studio\ 2015\\Projects\\ArklahomaLakes\\ArklahomaLakes\.WebUi\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="EFDbContext-Web.config Connection String" description="" value="Data Source=Arklahomalakes.database.windows.net;Initial Catalog=EFDbContext;User ID=arklahoma;Password=B@nj0B@!!72" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Deshazer72\\Documents\\Visual\ Studio\ 2015\\Projects\\ArklahomaLakes\\ArklahomaLakes\.WebUi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='EFDbContext']/@connectionString" />
+  </parameter>
+</parameters>

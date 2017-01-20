@@ -1,0 +1,59 @@
+﻿@model ArklahomaLake.Domain.Entities.Customers
+@{
+    ViewBag.Title = "Edit " + @Model.CustomerName;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit @Model.CustomerName</h2>
+
+<div class="panel">
+    <div class="panel-heading">
+        <h3>Edit @Model.CustomerName</h3>
+    </div>
+
+    @using (Html.BeginForm("Edit", "AddCustomer",
+                        FormMethod.Post))
+    {
+
+        <div class="panel-body">
+            @Html.HiddenFor(m => m.CustomerID)
+            
+            <div class="form-group">
+                <label>Customer Name</label>
+                 @Html.TextBoxFor(c => c.CustomerName, new {@class = "form-control"})
+             </div>
+            <div class="form-group">
+                <label>Address</label>
+                @Html.TextBoxFor(c => c.Address, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>City</label>
+                @Html.TextBoxFor(c => c.City, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>State</label>
+                @Html.TextBoxFor(c => c.State, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Zip</label>
+                @Html.TextBoxFor(c => c.ZipCode, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Phone Number</label>
+                @Html.TextBoxFor(c => c.PhoneNumber, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Address Url</label>
+                @Html.TextBoxFor(c => c.AddressUrl, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="panel-footer">
+            <input type="submit" value="Save" class="btn btn-primary" />
+            @Html.ActionLink("Cancel and return to List", "Index", null, new
+       {
+           @class = "btn btn-default"
+       })
+        </div>
+    }
+</div>

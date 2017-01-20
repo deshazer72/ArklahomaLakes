@@ -1,0 +1,77 @@
+﻿@model ArklahomaLake.Domain.Entities.ShippingDetails
+
+@{
+    ViewBag.Title = "ArklahomaLakes Check out";
+}
+
+<h2>Check Out Now</h2>
+
+<p>Please enter your details, and we'll ship your goods right away!</p>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <h3> Ship to</h3>
+    <div class="form-group">
+        <label>Name:</label>
+        @Html.TextBoxFor(p => p.Name, new { @class = "form-control"})
+    </div>
+
+    <h3>Address</h3>
+    <div class="form-group">
+        <label>Line 1:</label>
+        @Html.TextBoxFor(p => p.Line1, new { @class = "form-control"})
+    </div>
+    <div class="form-group">
+        <label>Line 2:</label>
+        @Html.TextBoxFor(p => p.Line2, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Line 3:</label>
+        @Html.TextBoxFor(p => p.Line3, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>City:</label>
+        @Html.TextBoxFor(p => p.City, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>State:</label>
+        @Html.TextBoxFor(p => p.State, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Zip:</label>
+        @Html.TextBoxFor(p => p.Zip, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Email Address:</label>
+        @Html.TextBoxFor(p => p.EmailAddress, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Card Number:</label>
+        @Html.TextBoxFor(p => p.CardNumber, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Card Month:</label>
+        @Html.TextBoxFor(p => p.CardMonth, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Card Year:</label>
+        @Html.TextBoxFor(p => p.CardYear, new { @class = "form-control" })
+    </div>
+
+    @*
+    foreach (var p in ViewData.ModelMetadata.Properties)
+    {
+        if(p.PropertyName != "Name")
+        {
+            <div class="form-group">
+                <label>@(p.DisplayName ?? p.PropertyName)</label>
+                @Html.TextBox(p.PropertyName, null, new { @class = "form-control"})
+            </div>
+        }
+    }
+*@
+    <div class="text-center">
+        <input class="btn btn-primary" type="submit" value="Complete Order" />
+    </div>
+}

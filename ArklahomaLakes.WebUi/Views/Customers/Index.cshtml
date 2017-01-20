@@ -1,0 +1,22 @@
+﻿@model ArklahomaLakes.WebUi.Models.CustomerListViewcs
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Customers</h2>
+@foreach (var p in Model.Customers)
+{
+<div>
+    <ul style="list-style: none">
+        <li>@Html.ActionLink(p.CustomerName, "List", "Product")</li>
+        <li>@p.Address</li>
+        <li>@p.City</li>
+        <li>@p.State</li>
+        <li>@p.ZipCode</li>
+        <li><a href="@p.AddressUrl">Click here for Directions</a></li>
+        <li><a href="tel: @p.PhoneNumber">@p.PhoneNumber</a></li>
+    </ul>
+</div>
+    <hr />
+}
